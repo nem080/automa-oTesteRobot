@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T15:40:56.078707" rpa="false" schemaversion="5">
+<suite id="s1" name="ExecKeywordsArgumento" source="C:\Users\nen01\Documents\VariaveisEscoposArgumentos\ExecKeywordsArgumento.robot">
+<test id="s1-t1" name="Mostra email customizado" line="8">
+<kw name="Fazer emai customizado">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-02-05T15:40:56.187799" level="INFO">${Palavra_aleatoria} = 7vl0OFwh</msg>
+<var>${Palavra_aleatoria}</var>
+<arg>8</arg>
+<arg>[NUMBERS]ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-02-05T15:40:56.187799" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-05T15:40:56.187799" level="INFO">${Email_final} = Nem.DosSantos.7vl0OFwh@testeemail.com</msg>
+<var>${Email_final}</var>
+<arg>${Nome}.${SobreNome}.${Palavra_aleatoria}@testeemail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-05T15:40:56.187799" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${Email_final}</value>
+<status status="PASS" start="2024-02-05T15:40:56.187799" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-05T15:40:56.187799" level="INFO">${Email_feito} = Nem.DosSantos.7vl0OFwh@testeemail.com</msg>
+<var>${Email_feito}</var>
+<arg>${INDIVIDUO.nome}</arg>
+<arg>${INDIVIDUO.sobrenome}</arg>
+<status status="PASS" start="2024-02-05T15:40:56.179741" elapsed="0.008058"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${Email_feito}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-05T15:40:56.187799" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-05T15:40:56.179741" elapsed="0.022131"/>
+</test>
+<status status="PASS" start="2024-02-05T15:40:56.090955" elapsed="0.115695"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ExecKeywordsArgumento">ExecKeywordsArgumento</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-05T15:40:56.042888" level="WARN">Error in file 'C:\Users\nen01\Documents\VariaveisEscoposArgumentos\ExecKeywordsArgumento.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
